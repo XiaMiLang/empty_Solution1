@@ -1,4 +1,5 @@
-﻿@font-face {
+﻿/* app.css */
+@font-face {
     font-family: Roboto;
     src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
 }
@@ -16,18 +17,18 @@ body{
 }
 
 .shadow{
-    box-shadow: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.4) !important;
 }
 
 .shadow:hover {
     box-shadow: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.8) !important;
 }
 .shadow-no-hover {
-    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.5) !important;
 }
 
 .bg-motherboard-dev{
-    background-image: url(../assets/img/publicbackgrounds/bg-motherboard-dev.jpg)
+    background-image: url("../assets/img/publicbackgrounds/bg-motherboard-dev.jpg");
 }
 
 .min-vh-90{
@@ -42,26 +43,21 @@ body{
     font-size: 3rem;
 }
 
-@media (max-width: 992px){
+@media (min-width: 992px){
     .md-f-size-1-5{
         font-size: 1.5rem;
     }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .md-and-smaller-my-3 {
         margin-top: 1rem !important;
         margin-bottom: 1rem !important;
     }
 
     .bg-motherboard-dev {
-        background-image: url(../assets/img/publicbackgrounds/bg-motherboard.jpg)
+        background-image: url("../assets/img/publicbackgrounds/bg-motherboard.jpg")
     }
-}
-
-
-p{
-    font-family: Roboto, serif;
 }
 
 .validation-message {
